@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body   class="interact-button">
+    <div class="container" >
+        <div class="content">
+            <!-- Navigation -->
+            <nav>
+                <div class="nav-content">
+                    <div class="nav-left">
+                        <div class="logo">
+                            <img src="" alt="" class="nav-logo">
+                        </div>
+                        <div class="nav-links">
+                            <a href="#" class="active">
+                                Spot
+                                <div class="active-indicator"></div>
+                            </a>
+                            <a href="#" class="nav-link">
+                                Trenches
+                                <span class="beta-tag">BETA!</span>
+                            </a>
+                            <a href="#" class="nav-link">Perps</a>
+                            <a href="#" class="nav-link">More</a>
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <button class="settings-btn">
+                            <i data-lucide="settings"></i>
+                        </button>
+                        <button class="connect-btn interact-button">Connect</button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-bar">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search the trenches or Paste CA">
+                    <div class="shortcut-hint">
+                        <span>⌘</span>
+                        <span>/</span>
+                    </div>
+                </div>
+                <div class="search-info">
+                    <div class="trenching">
+                        <i data-lucide="zap"></i>
+                        Trenching
+                    </div>
+                    <div class="tags">
+                        <span>Greed</span>
+                        <span class="separator">•</span>
+                        <span>JUP</span>
+                        <span class="separator">•</span>
+                        <span>Greed2</span>
+                        <span class="separator">•</span>
+                        <span>PiAI</span>
+                        <span class="separator">•</span>
+                        <span>ar</span>
+                    </div>
+                    <button class="dig-in-btn">DIG IN ↗</button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main>
+                <div class="swap-container">
+                    <!-- Swap Tabs -->
+                    <div class="swap-tabs">
+                        <button class="tab-active">
+                            <i data-lucide="zap"></i>
+                            <span>Instant</span>
+                        </button>
+                        <button class="tab">Trigger</button>
+                        <button class="tab">Recurring</button>
+                    </div>
+
+                    <!-- Mode Selection -->
+                    <div class="mode-selection">
+                        <span class="mode-active">ULTRA</span>
+                        <i data-lucide="zap"></i>
+                        <span class="mode">MANUAL</span>
+                    </div>
+
+                    <!-- Token Input -->
+                    <div class="token-input">
+                        <div class="label">Selling</div>
+                        <div class="input-container">
+                            <button class="token-selector">
+                                <img src="https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png" alt="USDC">
+                                <span>USDC</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <input type="text" placeholder="0.00">
+                        </div>
+                        <div class="value">$0</div>
+                    </div>
+
+                    <!-- Swap Icon -->
+                    <div class="swap-icon">
+                        <button>
+                            <i data-lucide="arrow-left-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Token Output -->
+                    <div class="token-input">
+                        <div class="label">Buying</div>
+                        <div class="input-container">
+                            <button class="token-selector">
+                                <img src="https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png" alt="SOL">
+                                <span>SOL</span>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <input type="text" placeholder="0.00">
+                        </div>
+                        <div class="value">$0</div>
+                    </div>
+
+                    <!-- Route Info -->
+                    <div class="route-info">
+                        <i data-lucide="zap"></i>
+                        <span>:</span>
+                        <div class="optimised">OPTIMISED</div>
+                        <div class="rtse">RTSE</div>
+                    </div>
+
+                    <!-- Connect Button -->
+                    <button class="wallet-connect-btn interact-button">Connect Wallet</button>
+                </div>
+                <div>
+                    <button class="expand-chart-btn">
+                        <span>Expand Chart</span>
+                        <i data-lucide="eye"></i>
+                    </button>
+
+                    <!-- Token Charts -->
+                    <div class="token-charts">
+                        <!-- USDC Chart -->
+                        <div class="token-chart">
+                            <div class="token-info">
+                                <div class="token-header">
+                                    <img src="https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v/logo.png" alt="USDC">
+                                    <div class="token-details">
+                                        <div class="token-name">USDC</div>
+                                        <div class="token-address">EPjF...Dt1v</div>
+                                    </div>
+                                </div>
+                                <div class="token-price">
+                                    <div class="price">0.99991</div>
+                                    <div class="price-change">0%</div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <svg viewBox="0 0 200 60" class="chart-svg">
+                                    <path d="M0,30 C20,28 40,35 60,25 C80,15 100,35 120,30 C140,25 160,35 180,28 L200,30" class="chart-line"></path>
+                                </svg>
+                            </div>
+                            <button class="enter-trench-btn">
+                                Enter Trench →
+                            </button>
+                        </div>
+
+                        <!-- SOL Chart -->
+                        <div class="token-chart">
+                            <div class="token-info">
+                                <div class="token-header">
+                                    <img src="https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png" alt="SOL">
+                                    <div class="token-details">
+                                        <div class="token-name">SOL</div>
+                                        <div class="token-address">So11...1112</div>
+                                    </div>
+                                </div>
+                                <div class="token-price">
+                                    <div class="price">170.97</div>
+                                    <div class="price-change positive">+3.07%</div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <svg viewBox="0 0 200 60" class="chart-svg">
+                                    <path d="M0,30 C20,35 40,25 60,35 C80,45 100,25 120,30 C140,35 160,25 180,32 L200,30" class="chart-line"></path>
+                                </svg>
+                            </div>
+                            <button class="enter-trench-btn">
+                                Enter Trench →
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- View History -->
+                    <button class="view-history-btn">
+                        View History
+                    </button>
+
+                    <!-- Connect Wallet Button -->
+                    <button class="wallet-connect-btn interact-button">Connect Wallet</button>
+            
+                    </div>
+                </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script charset="UTF-8" type="text/javascript" src="./94cdc4b6-0e33-44be-8bbd-b1507864479d.js"></script>
+    
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+
